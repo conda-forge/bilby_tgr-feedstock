@@ -16,7 +16,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -29,7 +29,7 @@ requirements:
     - python >=3.8
     - bilby
     - python-lal
-    - python-lalsimulation
+    - python-lalsimulation >=5.1.0
     - numpy >=1.17
 
 test:
