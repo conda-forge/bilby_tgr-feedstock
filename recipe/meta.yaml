@@ -1,13 +1,13 @@
 {% set name = "bilby_tgr" %}
-{% set version = "0.1" %}
+{% set version = "0.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bilby_tgr-{{ version }}.tar.gz
-  sha256: a3c1fe9146111ed6d6da1110d332d311d55b2d4cf311aa18849732cb886f0a27
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/bilby_tgr-{{ version }}.tar.gz
+  sha256: a6f9ac35806d74e516fc96245351fafd732255919f74b0e106734a04d642b74e
   patches:
     # replace the dependency lalsuite by the actually required subcomponents python-lal
     # and python-lalsimulation, which are not packaged separately on PyPI
